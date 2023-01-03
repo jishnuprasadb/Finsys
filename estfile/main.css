@@ -1,0 +1,130 @@
+
+:root {
+    --main-bg-color: #009d63;
+    --main-text-color: #191C24;
+    --second-text-color: #bbbec5;
+    --second-bg-color: #c1efde;
+  }
+  
+  .primary-text {
+    color:red;
+  }
+  
+  .second-text {
+    background-color:#000;
+    color: #6C7293;
+    
+  }
+  .second-text.active {
+    background-color:#000;
+    color: #6C7293;
+    
+  }
+  
+  .primary-bg {
+    background-color: var(--main-bg-color);
+  }
+  
+  .secondary-bg {
+    background-color: var(--second-bg-color);
+  }
+  
+  .rounded-full {
+    border-radius: 100%;
+  }
+  
+  #wrapper {
+    overflow-x: hidden;
+    background-image: linear-gradient(
+      to right,
+      #baf3d7,
+      #c2f5de,
+      #cbf7e4,
+      #d4f8ea,
+      #ddfaef
+    );
+    min-height: 100vh;
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+    background-color: var(--main-text-color);
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    color: red;
+    
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vh;
+    background-color: #000;
+  }
+  #page-content-wrapper .navbar{
+    background-color: #191C24;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  #menu-toggle {
+    cursor: pointer;
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 20px 30px;
+    background-color: #191C24;
+    color: #6C7293;
+  }
+  
+  .list-group-item:hover,
+  .list-group-item.active {
+    color: red;
+    background-color: #000;
+    font-weight: bold;
+    border-left: 3px solid red;
+  }
+  .dropdown-item {
+    border: none;
+    padding: 20px 30px;
+    background-color: #191C24;
+    color: #6C7293;
+  }
+  .dropdown-menu {
+    background-color: #191C24;
+  }
+  .dropdown-item:hover,
+  .dropdown-item.active {
+    color: red;
+    background-color: #000;
+    font-weight: bold;
+    border-left: 3px solid red;
+  }
+
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+ 
