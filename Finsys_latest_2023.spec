@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['Finsys_latest_2023.py'],
+    ['Finsys_latest_2023', '4'],
     pathex=[],
     binaries=[],
     datas=[],
